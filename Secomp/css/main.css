@@ -1,0 +1,480 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+html, body{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	background: #f0f0f0;
+}
+
+p{
+	margin: 0 0 2% 0;	
+}
+
+p, ul{
+	font-family: "Proxima Nova Light", 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-size-adjust: 0.488;
+	font-weight: 200;
+	font-style: normal;
+}
+
+img{
+	border: 0;
+}
+
+h1, #pixels{
+	font-family: "Museo 900", Verdana, serif;
+	font-size-adjust: 0.40;
+	font-weight: 700;
+	font-style: normal;
+}
+
+h2{
+	font-family: "Beau Sans Pro Book", Verdana, sans-serif;
+	font-size-adjust: 0.531;
+	font-weight: 500;
+	font-style: normal;
+}
+
+#header h1, #pixels{
+	color: #48941A;
+}
+
+.float-left{
+	float: left;	
+	margin: 0 0 0 2%;
+}
+
+.float-right{
+	float: right;
+	margin: 0 2% 0 0;
+}
+
+.center{
+	float: center;
+	font-size: 2.5em;
+	padding: 4% 0 0 0;
+	text-align: center;
+}
+
+.painel{
+	margin: 0 auto;
+	min-width: 95%;
+	overflow: auto;
+	width: 90%;
+	height: 98%;
+}
+
+.painel .float-left, .painel .float-right{
+	padding: 4% 0 0 0;
+	position: relative;
+	width: 40%;
+	height: 60%;
+}
+
+#header, #principal, #evento, #programacao, #equipe, #patrocinios, #contato, #inscricao {
+	width: 100%;
+}
+
+/*-----------------------------CONTATO-------------------------------------------------------------------------------------------------------------------*/
+
+#nav{
+	font-family: "Proxima Nova Light", 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	position: fixed;
+	top: 0;
+	z-index: 1000000;
+	width: 100%;
+	height: 4%;
+	text-align: center;
+}
+
+#nav .bar{
+	height: 100%;
+	background-color: #fff;
+}
+
+#nav .bar .content{
+	height: 100%;
+}
+
+#nav .bar .content a{
+	width: 9%;
+	height: 100%;
+	float: left;
+	padding: 6px 1% 0 1%;
+	text-align: center;
+	text-decoration: none;
+	color: #3d79b7;
+	cursor: pointer;
+}
+
+#nav .bar .content a:hover{
+	background-color: #3d79b7;
+	color: #fff;
+	height: 100%;                        /* para falta de suporte */  
+	height: -webkit-calc(100% - 5px);  /* para Chrome */
+	height: -moz-calc(100% - 5px);     /* para Firefox */
+	height: calc(100% - 5px);          /* para suporte nativo */
+}
+
+#nav .bar .content a:hover a{
+	color: #fff;
+}
+
+#nav .bar a.selected{
+	background-color: #3d79b7;
+	color: #fff;
+	height: 100%;                        /* para falta de suporte */  
+	height: -webkit-calc(100% - 5px);  /* para Chrome */
+	height: -moz-calc(100% - 5px);     /* para Firefox */
+	height: calc(100% - 5px);          /* para suporte nativo */
+}
+
+.sidebar{
+	float: right;
+	overflow: hidden;
+	height: 100%;
+}
+
+.sidebar li{
+	width: 9%;
+	height: 100%;
+	list-style-type:none;
+	cursor: pointer;
+	float: left;
+	padding: 6px 1% 0 1%;
+	text-align: center;
+	font-family: "Proxima Nova Light", 'Helvetica Neue', Arial, Helvetica, sans-serif;	
+	color: #3d79b7;
+}
+
+.sidebar:hover{
+	height: 200px;
+	overflow: visible;
+	background: #f5f5f5;
+	border-right: 1px solid #ccc;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	-webkit-transition: width .05s linear;
+	transition: width .05s linear;
+	-webkit-transform: translateZ(0) scale(1,1);
+	z-index: 1000;
+}
+
+/*
+.sidebar{
+	float: right;
+	margin-right: 0%;
+	width: 6.5%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.sidebar a:hover {
+	overflow: visible;
+	height: 150px;
+	background: #f5f5f5;
+	border-left: 1px solid #ccc;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	-webkit-transition: width .05s linear;
+	transition: width .05s linear;
+	-webkit-transform: translateZ(0) scale(1,1);
+	z-index: 1000;
+}
+*/
+
+input.formlogin {padding: 9px; float: left; border: solid 1px #E5E5E5; outline: 0; color:#868686; font: normal 15px/100% Verdana, Tahoma, sans-serif;
+	width: 160px; background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;}	
+
+input.submit {cursor: pointer; padding: 9px; float: left; border: solid 1px #E5E5E5; outline: 0; color:#868686; font: normal 15px/100% Verdana, Tahoma, sans-serif;
+	width: 160px; background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;}
+
+input.sumit:hover{background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #DDD), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #DDD 1px, #FFFFFF 25px);	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;}
+
+/*-----------------------------PRINCIPAL-------------------------------------------------------------------------------------------------------------------*/
+#homespan{
+	background: url('../images/homespan.png') repeat;
+	height: 100%;
+}
+
+#principal{
+	color: white;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.homenuvem{	
+	background: url('../images/homenuvem.png');
+	width: 536px;
+	height: 407px;
+	float: left;
+	margin-left: 0%;
+	margin-top: 10%;
+}
+
+.homedata{	
+	background: url('../images/homedata.png');
+	width: 231px;
+	height: 102px;
+	float: left;
+	margin-left: 5%;
+	margin-top: 12%;
+}
+
+.homeinscricao{	
+	background: url('../images/homeinscricao.png');
+	width: 212px;
+	height: 157px;
+	float: right;
+	margin-right: 10%;
+	margin-top: 20%;
+}
+
+.hometetris{
+	background: url('../images/hometetris.png') repeat;
+	width: 100%;
+	height: 135px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+/*-----------------------------EVENTO-------------------------------------------------------------------------------------------------------------------*/
+
+#evento{
+	background: url('../images/evento.png') repeat;
+	color: white;
+	height: 100%;
+}
+
+.globo{
+	background: url('../images/globo.png') no-repeat;
+	width: 486px;
+	height: 486px;
+	float: left;
+	margin-left: 0%;
+	margin-top: 10%;
+}
+
+/*-----------------------------PROGRAMAÇÃO-------------------------------------------------------------------------------------------------------------------*/
+
+#programacaospan{
+	background: #000;
+	height: 100%;	
+}
+
+#programacao{
+	background: url('../images/programacao.png') 50% 0 no-repeat fixed;
+	color: white;
+	height: 100%;	
+}
+
+.programacaoPersonagem{
+	float: left;
+	width: 850;
+	height: 900;
+}
+
+.programacaoDescricao{
+	background: url('../images/programacaodescricao.png') 50% 0 no-repeat fixed;	
+	width: 800px;
+	height: 300px;
+	left: 50%;
+	z-index: 3;
+}
+
+.programacaoShortcut{
+	float: right;
+	position: relative;
+	top: 75%;
+	right: 20%;
+}
+
+.iconPersonagem:hover{
+	cursor: pointer;
+}
+
+/*-----------------------------EQUIPE-------------------------------------------------------------------------------------------------------------------*/
+
+#equipespan{
+	background: #f0f0f0;
+	height: 100%;
+}
+
+#equipe{
+	background: url('../images/equipe.png') 50% 0 no-repeat fixed;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.equipeCapsula{
+	background: url('../images/equipecapsula.png');
+	width: 226px;
+	height: 438px;
+}
+
+.equipeShortcut{
+	float: right;
+	margin-right: 10%;
+}
+
+/*-----------------------------PATROCÍNIOS-------------------------------------------------------------------------------------------------------------------*/
+
+#patrociniospan{
+	background: url('../images/patrocinadorespan.png') repeat;
+	height: 100%;
+}
+
+#patrocinios{
+	background: url('../images/patrocinadores.png') 50% 0 no-repeat;
+	height: 100%;
+	color: #ffffff;
+}
+
+/*-----------------------------CONTATO-------------------------------------------------------------------------------------------------------------------*/
+
+#contatospan{
+	background: url('../images/contatospan.png') repeat;
+	height: 100%;
+}
+
+#contato{
+	background: url('../images/contato.png') 50% 0 no-repeat;
+	height: 100%;
+	padding: 3% 0 0 0;
+	color: #fff;
+}
+
+form.contato{
+	float: left;
+	margin-left: 2%;
+}
+
+p.contato{
+	margin: 1% 0 7% 70%;
+}
+
+.maps {
+	float: right;
+	margin-right: 0%;
+	margin-top: 3%;
+}
+
+input.contato{ padding: 9px;	float: left; border: solid 1px #E5E5E5; outline: 0; color:#868686; font: normal 15px/100% Verdana, Tahoma, sans-serif;
+	width: 100%; background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;}	
+	
+textarea.contato{ padding: 9px; border: solid 1px #E5E5E5; outline: 0; color: #868686; font: normal 13px/100% Verdana, Tahoma, sans-serif;
+	width: 100%; background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px); box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;}
+	
+textarea.contato { width: 100%; max-width: 300px; height: 150px; line-height: 150%;}
+	
+input.contato:hover { border-color: #C9C9C9; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;}
+	
+textarea.contato:hover { border-color: #C9C9C9; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;}
+	
+input.contato:focus { border-color: #C9C9C9; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;}
+	
+textarea.contato:focus { border-color: #C9C9C9; 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;}
+	
+.submit_contato { color:#888888; font-size:15px; line-height:18px; background-color: #e8e8e8; padding: 5px 20px 8px 20px; border-radius:4px; box-shadow: 0 1px 1px #9f9f9f; text-decoration:none; cursor:pointer;}
+.submit_contato:hover {background:#f5f5f5; color: #696969; font-size:15px;}
+
+/*-----------------------------INSCRIÇÃO-------------------------------------------------------------------------------------------------------------------*/
+
+#inscricao{
+	background: url('../images/inscricao.png') repeat;
+	height: 100%;
+	text-align: left;
+	color: #ffffff;
+}
+
+.inscricao{
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+input.btnArcade
+{
+	margin-top: 2%;
+	left: 45%;
+	background: url('../images/btnArcade.png');
+	width: 200px;
+	height: 180px;
+	border: 0px;
+}
+
+input.btnArcade:hover 
+{
+	background: url('../images/btnArcadehover.png');
+	cursor: pointer;
+}
+
+input.inscricao { padding: 9px; float: left; border: solid 1px #E5E5E5; outline: 0; color:#868686; font: normal 15px/100% Verdana, Tahoma, sans-serif;
+	width: 50%; background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;}	
+	
+textarea.inscricao { padding: 9px; border: solid 1px #E5E5E5; outline: 0; font: normal 13px/100% Verdana, Tahoma, sans-serif;
+	width: 50%; background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px); box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;}
+	
+textarea.inscricao { width: 50%; max-width: 50%; height: 150px; line-height: 150%;}
+	
+input.inscricao:hover { border-color: #C9C9C9; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;}
+	
+textarea.inscricao:hover { border-color: #C9C9C9; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;}
+	
+input.inscricao:focus { border-color: #C9C9C9; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;}
+	
+textarea.inscricao:focus { border-color: #C9C9C9; 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;}
+
+/*INSCRIÇÃO*/
+
+footer{
+	background-color: #000;
+	padding-top: 0.3%;
+	padding-bottom: 0.3%;
+	font-family: 'Six Caps',sans-serif;
+	font-size: 14px;
+	color: #868686;
+	margin-bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.copyright{	
+}
+
+.emcomp{
+	float: right;
+	margin-right: 15px;
+	text-decoration: none;
+	color: #868686;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.emcomp:hover{
+	color: #ffffff;
+}
