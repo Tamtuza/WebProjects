@@ -1,0 +1,82 @@
+@charset "utf-8";
+/*CSS Document*/
+
+h1 { color: #4682B4; font-weight: big; font-size: 100px; font-family: 'Oswald', sans-serif; text-transform: uppercase; }
+h1.home { margin-top: 100px; line-height: 0px; text-shadow: 3 3 3px #000000; text-align: center;}
+h5 { color: #4682B4; font-size: 20px; font-family: 'Oswald', sans-serif; text-align: center; }
+
+body {background-color: #FFF0F5;}
+
+#login { width: 100%; height: 461px; background-color: #FFFFFF; }
+img.login {float: left; margin-left: 20%;}
+form.login{ background-color: #FFFFFF; float: right; margin-top: 10%; margin-right: 25%; }
+
+#container { width: 80%; float: right; }
+#chat { width: 100%; height: 60%; background-color: #FFFFFF; }
+iframe { width: 98%; height: 100%; border: 0px; }
+#msg { display: inline-block; width: 100%; height: 10%;}
+
+#contatos { width: 20%; height: 100%; float: left; }
+
+#comandos { position: center; display: inline; width: 100%; height; 10%}
+
+input {
+    margin-right: 35px;
+    /*border-radius: 1em;*/
+	background-color:#FFFFFF;
+    border:1px solid #000;
+    padding:4px;
+
+}
+	/*hover nas caixas do formulario*/
+input:hover {
+    background-color:#FFFFFF;
+    border:1px solid #E6E6FA;
+    padding:4px;
+}
+
+.btn-entrar{
+	margin-left:100px;
+    padding:5px;
+    background-color:#4682B4;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+    border:1px solid;
+    color:#fff;
+    font-weight:bold;
+	display:  inline-block;
+    width: 90px;
+	}
+	/*hover nos buttons*/
+	.btn-entrar:hover {
+    padding:5px;
+	cursor:pointer;
+    background-color: #4682B4;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+    border:1px solid #000;
+    color:#fff;
+    font-weight:bold;
+	
+
+	}	
